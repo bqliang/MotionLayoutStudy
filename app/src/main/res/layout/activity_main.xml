@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_property_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_transition_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="过渡动画" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_transition_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="过渡动画 GO" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_begin_delayed_transition_with_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BeginDelayedTransition + ConstraintLayout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_simple_motion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple MotionLayout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试" />
+
+
+    </LinearLayout>
+
+</ScrollView>
