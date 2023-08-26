@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MotionLayoutStudy"
         tools:targetApi="31">
         <activity
+            android:name=".BasicMotionLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".SimpleMotionLayoutActivity"
             android:exported="false" />
         <activity

@@ -43,6 +43,11 @@
             android:text="Simple MotionLayout" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_basic_motion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MotionLayout Basic" />
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

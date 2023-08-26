@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity() {
             launchActivity<SimpleMotionLayoutActivity>()
         }
 
+        binding.btnBasicMotionLayout.setOnClickListener {
+            launchActivity<BasicMotionLayoutActivity>()
+        }
         binding.btnTest.setOnClickListener {
             launchActivity<TestActivity>()
         }
