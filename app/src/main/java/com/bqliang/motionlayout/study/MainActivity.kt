@@ -41,6 +41,19 @@ class MainActivity : AppCompatActivity() {
         binding.btnBasicMotionLayout.setOnClickListener {
             launchActivity<BasicMotionLayoutActivity>()
         }
+
+        binding.btnBasicKeyFrame.setOnClickListener {
+            launchActivity<KeyFrameBasicActivity>()
+        }
+
+        binding.btnDeltaRelative.setOnClickListener {
+            launchActivity<DeltaRelativeActivity>()
+        }
+
+        binding.btnPathRelative.setOnClickListener {
+            launchActivity<PathRelativeActivity>()
+        }
+
         binding.btnTest.setOnClickListener {
             launchActivity<TestActivity>()
         }

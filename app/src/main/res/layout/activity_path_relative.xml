@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_path_relative_scene"
+    app:motionDebug="SHOW_ALL"
+    tools:context=".DeltaRelativeActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#673AB7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_125dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="125dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_125dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="125dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="250dp" />
+
+    <View
+        android:id="@+id/vertical_indicator_line_125dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFC107"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_125dp"
+        app:layout_constraintRight_toRightOf="@id/guideline_vertical_125dp" />
+
+    <View
+        android:id="@+id/horizontal_indicator_line_125dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#4CAF50"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_125dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_125dp" />
+
+    <View
+        android:id="@+id/vertical_indicator_line_250dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_250dp"
+        app:layout_constraintRight_toRightOf="@id/guideline_vertical_250dp" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x = 250dp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_250dp"
+        app:layout_constraintRight_toRightOf="@id/guideline_vertical_250dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y = 250dp"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBottomOf="@id/guideline_horizontal_125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_125dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x = 125dp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_125dp"
+        app:layout_constraintRight_toRightOf="@id/guideline_vertical_125dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

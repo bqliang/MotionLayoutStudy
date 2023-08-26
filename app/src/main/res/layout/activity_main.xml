@@ -47,6 +47,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="MotionLayout Basic" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_basic_key_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Frame Basic" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_deltaRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="deltaRelative" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pathRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pathRelative" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_test"
             android:layout_width="match_parent"
